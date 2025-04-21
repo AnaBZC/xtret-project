@@ -1,12 +1,50 @@
-# React + Vite
+# XTREET Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the frontend service for **XTREET**, a retail brand focused on urban and streetwear fashion. The frontend is built with **React + Vite**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🧰 Tech Stack
 
-## Expanding the ESLint configuration
+- **React**
+- **Vite**
+- **Material Ui**
+- **Axios**
+- **Sweetalert2**
+- **eslint**
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+---
+
+## 🚀 Getting Started
+
+### 1. Install dependencies
+```bash
+npm install
+```
+
+### 2. Start the server
+```bash
+npm run dev
+```
+
+## 📦 Project Structure
+```json
+frontend/
+├── public                # Public assets folder
+├── src/
+│   └── api/              # Axios module for conecting to BE
+|   └── assets            # Internal assets folder
+|        └── images 
+|       └── icons 
+|   └── components/       # UI components
+|   └── App.css    
+|   └── App.jsx
+|   └── index.css
+|   └── main.jsx
+├── eslint.config.js
+├── index.html             
+├── package-lock.json   
+└── package.json
+└── vite.config.js
+```

@@ -17,18 +17,12 @@ This is the backend service for **XTREET**, a retail brand focused on urban and 
 
 ## 🚀 Getting Started
 
-### 1. Clone the repo
-```bash
-git clone https://github.com/your-username/xtreet-backend.git
-cd xtreet-backend
-```
-
-### 2. Install dependencies
+### 1. Install dependencies
 ```bash
 npm install
 ```
 
-### 3. Start the server
+### 2. Start the server
 ```bash
 node server.js
 ```
@@ -47,7 +41,7 @@ Request body example:
 
 ## 📦 Project Structure
 ```json
-xtreet-backend/
+backend/
 ├── models/
 │   └── Contact.js        # Mongoose schema for contact messages
 ├── routes/
