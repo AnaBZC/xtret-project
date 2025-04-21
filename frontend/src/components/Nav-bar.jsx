@@ -19,7 +19,7 @@ import MenuItem from '@mui/material/MenuItem';
 import logoMagenta from '../assets/icons/logo-magenta.svg';
 
 
-const pages = [{ description: 'About Us', link: 'about-section' }, { description: 'Our Products', link: 'product-section' }, { description: 'Contact', link: 'contact-section' }];
+const pages = [{ description: 'About Us', link: 'about-section' }, { description: 'Our collection', link: 'product-section' }, { description: 'Contact', link: 'contact-section' }];
 
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
