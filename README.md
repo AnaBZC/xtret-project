@@ -4,11 +4,12 @@ XTREET is a fashion-forward streetwear brand inspired by urban culture and racin
 
 The project includes:
 
-- A responsive and animated React frontend styled withMaterial UI.
+- A responsive and animated React frontend styled with Material UI.
 - A Node.js backend with Express to handle contact form submissions.
 - A MongoDB database to store messages (optional for simulation/testing).
 - Designed to scale into a full e-commerce experience.
-- ✨ Key Features
+
+### ✨ Key Features
 - 🎯 Hero section with bold visuals and dynamic animations
 - 📬 Contact form with frontend validation and backend processing
 - ⚙️ Modern UI using Material UI components
