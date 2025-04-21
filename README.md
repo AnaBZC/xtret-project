@@ -29,7 +29,7 @@ cd xtreet-project
 npm run install
 ```
 
-### 3. Run project
+### 3. Run project locally
 This command allow you to run both, backend and frontend services
 ```bash
 npm run dev
@@ -42,14 +42,29 @@ http://localhost:5173/
 [Backend](./backend/README.md)
 [Frontend](./frontend/README.md)
 
-### 6. Component Diagram
+### 5. Link to live version
+[Live version](https://xtret-project.vercel.app/)
+
+[Endpoint to verify submitted data](https://xtret-project.onrender.com/api/contact)
+
+### 7. Component Diagram
 ![Diagrama](https://github.com/user-attachments/assets/c54a2d4a-85be-4fcb-b12f-b2f11eba835b)
 
-### 7. Site image 
+### 8. Site image 
 <img width="1728" alt="image" src="https://github.com/user-attachments/assets/c529f914-225a-47f2-98cb-b5c49a43d8bf" />
 <img width="1718" alt="image" src="https://github.com/user-attachments/assets/1340bcf7-ad8e-4215-a841-9f393bb1ba38" />
 <img width="1711" alt="image" src="https://github.com/user-attachments/assets/a4a293b7-7ad6-49fb-9a5a-163fa5211614" />
 <img width="1693" alt="image" src="https://github.com/user-attachments/assets/f0ff0842-7d14-429e-8b89-390cf0cb18e2" />
+
+## Justification for the use of technologies 
+### React
+#### Lighter and more flexible for a landing page. 
+React is a library focused on the view layer (UI), ideal for dynamic yet simple pages like a landing page.
+Angular is more robust than necessary and may be too “heavy” for this use case.
+#### Easier future integration with e-commerce 
+React integrates very well with tools like Next.js (for SSR/SEO), Stripe, Firebase, Shopify, etc.
+#### Better performance for static or hybrid sites. 
+With frameworks like Next.js, you can turn your landing into a very fast static site with excellent performance and SEO
 
 
 
