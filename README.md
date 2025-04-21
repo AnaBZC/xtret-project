@@ -37,3 +37,20 @@ npm run dev
 ### 4. Link to running application
 http://localhost:5173/
 
+### 5. Link to backend and frontend readme
+[Backend](./backend/README.md)
+[Frontend](./frontend/README.md)
+
+### 6. Component Diagram
+![Diagrama](https://github.com/user-attachments/assets/c54a2d4a-85be-4fcb-b12f-b2f11eba835b)
+
+### 7. Site image 
+<img width="1728" alt="image" src="https://github.com/user-attachments/assets/c529f914-225a-47f2-98cb-b5c49a43d8bf" />
+<img width="1718" alt="image" src="https://github.com/user-attachments/assets/1340bcf7-ad8e-4215-a841-9f393bb1ba38" />
+<img width="1711" alt="image" src="https://github.com/user-attachments/assets/a4a293b7-7ad6-49fb-9a5a-163fa5211614" />
+<img width="1693" alt="image" src="https://github.com/user-attachments/assets/f0ff0842-7d14-429e-8b89-390cf0cb18e2" />
+
+
+
+
+
