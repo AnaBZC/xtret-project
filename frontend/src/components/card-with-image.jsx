@@ -43,7 +43,7 @@ const Card = ({ title, image, buttonText }) => {
 
   const cardStyle = {
     width: '300px',
-    background: '#1a1a1a',
+    
   }
 
   return (
