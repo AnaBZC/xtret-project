@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { Link } from 'react-scroll';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -18,8 +19,7 @@ import MenuItem from '@mui/material/MenuItem';
 import logoMagenta from '../assets/icons/logo-magenta.svg';
 
 
-const pages = ['About Us', 'Contact'];
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
+const pages = [{ description: 'About Us', link: 'about-section' }, { description: 'Our Products', link: 'product-section' }, { description: 'Contact', link: 'contact-section' }];
 
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -57,6 +57,18 @@ function ResponsiveAppBar() {
     backgroundColor: "#F70CF0"
   }
 
+  const buttonLinkStyle = {
+    my: 2, 
+    color: 'white', 
+    display: 'block',
+    '&:hover': {
+      bgcolor: '#400e78',
+      transform: 'scale(1.05)',
+      boxShadow: '0 4px 20px rgba(64, 14, 120, 0.5)',
+    },
+    transition: 'all 0.3s ease',
+  }
+
   return (
     <AppBar position="static" sx={styleTest}>
       <Container maxWidth="xl">
@@ -91,8 +103,8 @@ function ResponsiveAppBar() {
               sx={{ display: { xs: 'block', md: 'none' } }}
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu} sx={menuTextStyle}>
-                  <Typography sx={{ textAlign: 'center' }}>{page}</Typography>
+                <MenuItem key={page.description} onClick={handleCloseNavMenu} sx={menuTextStyle}>
+                  <Typography sx={{ textAlign: 'center' }}>{page.description}</Typography>
                 </MenuItem>
               ))}
             </Menu>
@@ -100,13 +112,21 @@ function ResponsiveAppBar() {
 
           <Box sx={[{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }, menuTextStyle]}>
             {pages.map((page) => (
-              <Button
-                key={page}
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block' }}
+              <Link 
+                to={page.link}
+                smooth={true}
+                duration={500}
+                offset={-50} 
               >
-                {page}
-              </Button>
+                <Button
+                  key={page.link}
+                  onClick={handleCloseNavMenu}
+                  sx={buttonLinkStyle}
+                >
+                  {page.description}
+                </Button>
+              </Link>
+
             ))}
           </Box>
 
@@ -127,9 +147,9 @@ function ResponsiveAppBar() {
               open={Boolean(anchorElUser)}
               onClose={handleCloseUserMenu}
             >
-              {settings.map((setting) => (
-                <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                  <Typography sx={{ textAlign: 'center' }}>{setting}</Typography>
+              {pages.map((setting) => (
+                <MenuItem key={setting.description} onClick={handleCloseUserMenu}>
+                  <Typography sx={{ textAlign: 'center' }}>{setting.description}</Typography>
                 </MenuItem>
               ))}
             </Menu>

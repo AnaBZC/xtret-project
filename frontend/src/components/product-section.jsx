@@ -9,9 +9,9 @@ import imagenSueter from '../assets/images/sueter.png';
 
 const ProductComponent = () => {
   const products = [
-    { name: 'Sudadera Racing', image: imagenSueter },
-    { name: 'Gorra Urban Drift', image: imagenGorra },
-    { name: 'Camiseta Street Heat', image: imagenSudadera },
+    { name: 'Hoddie', image: imagenSueter },
+    { name: 'Cap', image: imagenGorra },
+    { name: 'Sweatshirt', image: imagenSudadera },
   ];
 
   return (
@@ -29,7 +29,7 @@ const ProductComponent = () => {
             px: 2,
           }}
         >
-      <Typography variant="h4" fontWeight="bold" align="center" gutterBottom>
+      <Typography variant="h2" fontWeight="bold" align="center" gutterBottom>
         Our collection
       </Typography>
       <Grid container spacing={6} justifyContent="center">

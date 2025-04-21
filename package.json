@@ -4,12 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "concurrently \"node backend/server.js\" \"npm run dev --prefix frontend\""
+    "dev": "concurrently \"node backend/server.js\" \"npm run dev --prefix frontend\"",
+    "install": "concurrently \"npm install backend/\" \"npm install frontend/\""
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "concurrently": "^9.1.2"
+  },
+  "dependencies": {
+    "front-end": "file:frontend"
   }
 }

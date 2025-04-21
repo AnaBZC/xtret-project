@@ -5,11 +5,6 @@ import VisibilityIcon from '@mui/icons-material/Visibility';
 
 const AboutComponent = () => {
 
-  const titleStyle = {
-    color: "#F70CF0",
-    textAlign: 'start',
-  };
-
   const textCardStyle = {
     color: '#ffff',
     mb: '16px'
@@ -26,7 +21,7 @@ const AboutComponent = () => {
         textAlign: "center",
       }}
     >
-      <Typography variant="h4" fontWeight="bold" gutterBottom sx={titleStyle}>
+      <Typography variant="h2" fontWeight="bold" gutterBottom>
         About Us
       </Typography>
       <Grid container spacing={2}>

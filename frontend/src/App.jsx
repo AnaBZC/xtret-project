@@ -1,6 +1,3 @@
-//import { useState } from 'react'
-// import reactLogo from './assets/react.svg'
-// import viteLogo from '/vite.svg'
 import ResponsiveAppBar from './components/Nav-bar';
 import HeroComponent from './components/hero-component';
 import AboutComponent from './components/about-component';
@@ -15,10 +12,20 @@ function App() {
     <>
       <div>
         <ResponsiveAppBar />
-        <HeroComponent/>
-        <AboutComponent />
-        <ProductComponent />
-        <ContactComponent />
+        <section id='hero-section'>
+          <HeroComponent />
+        </section>
+        <section id='about-section'>
+          <AboutComponent />
+        </section>
+        <section id='product-section'>
+          <ProductComponent />
+        </section>
+        <section id='contact-section'>
+          <ContactComponent />
+        </section>
+
+
       </div>
 
     </>

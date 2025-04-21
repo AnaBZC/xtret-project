@@ -7,15 +7,12 @@ import {
   Typography,
   Button,
   TextField,
-  Grid,
-  Card,
-  CardMedia,
-  CardContent,
 } from "@mui/material";
 import CirclePattern from "../assets/icons/patron-circulos.svg";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import FacebookIcon from "@mui/icons-material/Facebook";
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
 const ContactComponent = () => {
   const [formData, setFormData] = useState({
@@ -103,23 +100,39 @@ const ContactComponent = () => {
   };
 
   const socialMediaItemStyle = {
-    mr: "24px",
+    mr: "32px",
+    width: '40px',
+    height: '40px'
   };
 
+  const fieldStyle = {
+    mb: 2, 
+    bgcolor: "#fcfcf9", 
+    input: { color: "#1e1e1e" },
+    borderRadius: '10px'
+  };
+
+  const buttonStyle = {
+    mt: 3, 
+    bgcolor: "#FF560A",
+    '&:hover': {
+      textDecoration: 'underline',
+      transform: 'scale(1.05)',
+    },
+    transition: 'all 0.3s ease',
+  }
+  
   return (
     <Box sx={contentStyle}>
-      <Typography variant="h4" fontWeight="bold" gutterBottom>
-        Contact us
-      </Typography>
-      <Typography gutterBottom>
-        Estamos aquí para resolver tus dudas o ayudarte con tu pedido.
+      <Typography variant="h2" fontWeight="bold" gutterBottom>
+        Contact Us
       </Typography>
       <Box component="form" maxWidth="600px" mx="auto" mt={4} onSubmit={handleSubmit}>
         <TextField
           fullWidth
-          label="Nombre"
+          label="Name"
           variant="filled"
-          sx={{ mb: 2, bgcolor: "#1e1e1e", input: { color: "white" } }}
+          sx={fieldStyle}
           onChange={handleChange}
           name="name"
           required
@@ -127,9 +140,9 @@ const ContactComponent = () => {
         />
         <TextField
           fullWidth
-          label="Correo electrónico"
+          label="Email"
           variant="filled"
-          sx={{ mb: 2, bgcolor: "#1e1e1e", input: { color: "white" } }}
+          sx={fieldStyle}
           name="email"
           onChange={handleChange}
           required
@@ -137,19 +150,20 @@ const ContactComponent = () => {
         />
         <TextField
           fullWidth
-          label="Mensaje"
+          label="Message"
           variant="filled"
           multiline
           rows={4}
-          sx={{ mb: 2, bgcolor: "#1e1e1e", input: { color: "white" } }}
+          sx={fieldStyle}
           name="message"
           onChange={handleChange}
           required
           value={formData.message}
         />
 
-        <Button type="submit" variant="contained" sx={{ bgcolor: "#FF560A" }}>
-          Enviar
+        <Button type="submit" variant="contained" sx={buttonStyle}>
+          Submit
+          <ArrowForwardIcon />
         </Button>
       </Box>
 
