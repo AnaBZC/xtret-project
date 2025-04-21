@@ -29,7 +29,7 @@ const AboutComponent = () => {
           <Card sx={{ minWidth: 275, backgroundColor: "#121212" }}>
             <CardContent>
               <RocketLaunchIcon sx={{ color: "#04F7E6", width: "100px", height: "100px" }} />
-              <Typography sx={textCardStyle}>
+              <Typography variant="h4" sx={textCardStyle}>
                 Our Mission
               </Typography>
               <Typography sx={textCardStyle}>
@@ -49,7 +49,7 @@ const AboutComponent = () => {
           <Card sx={{ minWidth: 275, backgroundColor: "#121212" }}>
             <CardContent>
               <VisibilityIcon sx={{ color: "#04F7E6", width: "100px", height: "100px" }} />
-              <Typography sx={textCardStyle}>
+              <Typography variant="h4" sx={textCardStyle}>
                 Our Vision
               </Typography>
               <Typography sx={textCardStyle}>
